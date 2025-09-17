@@ -1,0 +1,26 @@
+/* Main Navbar (For Pages Where You Want Full Design) */
+.main-navbar {
+    background-color: #A3C86D !important;
+}
+
+.main-navbar .navbar-nav .nav-link:hover,
+.main-navbar .navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-navbar .dropdown-menu {
+    background-color: #A3C86D;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-navbar .dropdown-item {
+    color: #3D550C;
+}
+
+.main-navbar .dropdown-item:hover {
+    background-color: #8FBF5D;
+    color: white;
+}

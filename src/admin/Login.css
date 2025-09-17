@@ -1,0 +1,76 @@
+.gradient-custom-2 {
+  background: linear-gradient(to right, #56ab2f, #a8e063);
+  border-radius: 20px; /* Rounded corners for the box */
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+  overflow: hidden;
+}
+
+/* Animated text */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.animated-text {
+  animation: fadeInUp 2s ease-out;
+}
+
+/* Custom login container */
+.lcontainer {
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(128, 90, 213, 0.3);
+  background: #fff;
+  overflow: hidden;
+}
+
+/* Left side (image section) */
+.image-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+/* Right side (form) */
+.form-container {
+  padding: 40px;
+}
+
+.form-container h4 {
+  font-weight: bold;
+  color: #2f4f2f;
+}
+
+/* Input fields */
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #f4a900;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #d18a00;
+}
+
+.btn-outline-danger {
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+

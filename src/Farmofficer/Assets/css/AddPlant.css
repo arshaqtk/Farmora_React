@@ -1,0 +1,169 @@
+/* Background image and container styling */
+.add-plant-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.add-plant-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Add_machinery_bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Glassmorphism effect for the card */
+.add-plant-card {
+    background: rgba(75, 72, 72, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(67, 60, 60, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Form wrapper styling */
+.add-plant-form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Card header styling */
+.add-plant-card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-plant-title {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center; /* Centers text horizontally */
+}
+/* Form group styling */
+.add-plant-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.add-plant-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #161111;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-weight:600;
+}
+
+.add-plant-input:focus {
+    outline: none;
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.add-plant-input:focus + .add-plant-label,
+.add-plant-input:not(:placeholder-shown) + .add-plant-label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #4b4b4b;
+    font-weight:bold ;
+}
+
+/* Label animation */
+.add-plant-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Invalid feedback styling */
+.add-plant-error {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Submit button styling */
+.add-plant-submit {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-plant-submit:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-plant-container {
+        padding: 10px;
+    }
+
+    .add-plant-card {
+        padding: 15px;
+    }
+
+    .add-plant-title {
+        font-size: 1.5rem;
+    }
+
+    .add-plant-input {
+        font-size: 0.9rem;
+    }
+
+    .add-plant-label {
+        font-size: 0.9rem;
+    }
+
+    .add-plant-submit {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .add-plant-title {
+        font-size: 1.2rem;
+    }
+
+    .add-plant-input {
+        font-size: 0.8rem;
+    }
+
+    .add-plant-label {
+        font-size: 0.8rem;
+    }
+
+    .add-plant-submit {
+        font-size: 0.8rem;
+    }
+}

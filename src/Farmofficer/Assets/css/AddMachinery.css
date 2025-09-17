@@ -1,0 +1,169 @@
+
+
+/* Background image and container styling */
+.form-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px; /* Add padding for smaller screens */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/Add_machinery_bg3.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* Glassmorphism effect for the card */
+.glassmorphism {
+    background: rgba(75, 72, 72, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(67, 60, 60, 0.1);
+    width: 100%;
+    max-width: 500px; /* Limit card width for larger screens */
+    padding: 20px;
+}
+
+/* Form wrapper styling */
+.form-wrapper {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Card header styling */
+.card-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    color: #ffffff;
+}
+
+/* Label animation */
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* Invalid feedback styling */
+.invalid-feedback {
+    color: #ff6b6b;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+/* Submit button styling */
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .glassmorphism {
+        padding: 15px; /* Reduce card padding for smaller screens */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Reduce title font size for smaller screens */
+    }
+
+    .form-input {
+        font-size: 0.9rem; /* Reduce input font size for smaller screens */
+    }
+
+    .form-label {
+        font-size: 0.9rem; /* Reduce label font size for smaller screens */
+    }
+
+    .submit-button {
+        font-size: 0.9rem; /* Reduce button font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-title {
+        font-size: 1.2rem; /* Further reduce title font size for mobile screens */
+    }
+
+    .form-input {
+        font-size: 0.8rem; /* Further reduce input font size for mobile screens */
+    }
+
+    .form-label {
+        font-size: 0.8rem; /* Further reduce label font size for mobile screens */
+    }
+
+    .submit-button {
+        font-size: 0.8rem; /* Further reduce button font size for mobile screens */
+    }
+}
